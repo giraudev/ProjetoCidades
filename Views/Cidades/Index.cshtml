@@ -1,0 +1,13 @@
+
+    @model IEnumerable<ProjetoCidades.Models.Cidade>
+
+<div>
+    <h2>Minhas Cidades</h2>
+    
+    @{
+        foreach(var item in Model)
+        {<li>@item.Nome</li>}
+    }
+    
+
+</div>

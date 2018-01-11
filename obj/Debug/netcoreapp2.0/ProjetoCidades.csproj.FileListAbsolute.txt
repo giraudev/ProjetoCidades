@@ -1,0 +1,10 @@
+C:\Users\33989106880\backend\ProjetoCidades\bin\Debug\netcoreapp2.0\ProjetoCidades.deps.json
+C:\Users\33989106880\backend\ProjetoCidades\bin\Debug\netcoreapp2.0\ProjetoCidades.runtimeconfig.json
+C:\Users\33989106880\backend\ProjetoCidades\bin\Debug\netcoreapp2.0\ProjetoCidades.runtimeconfig.dev.json
+C:\Users\33989106880\backend\ProjetoCidades\bin\Debug\netcoreapp2.0\ProjetoCidades.dll
+C:\Users\33989106880\backend\ProjetoCidades\bin\Debug\netcoreapp2.0\ProjetoCidades.pdb
+C:\Users\33989106880\backend\ProjetoCidades\obj\Debug\netcoreapp2.0\ProjetoCidades.csproj.CoreCompileInputs.cache
+C:\Users\33989106880\backend\ProjetoCidades\obj\Debug\netcoreapp2.0\ProjetoCidades.AssemblyInfoInputs.cache
+C:\Users\33989106880\backend\ProjetoCidades\obj\Debug\netcoreapp2.0\ProjetoCidades.AssemblyInfo.cs
+C:\Users\33989106880\backend\ProjetoCidades\obj\Debug\netcoreapp2.0\ProjetoCidades.dll
+C:\Users\33989106880\backend\ProjetoCidades\obj\Debug\netcoreapp2.0\ProjetoCidades.pdb
