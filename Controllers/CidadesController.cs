@@ -28,21 +28,45 @@ namespace ProjetoCidades.Controllers
             var lista = cidade.ListarCidades();
             return View(lista);
         }
-        //usado qndo quero visualizar
-        [HttpGet]
+        
+        //[HttpGet e HttpPost] é usado quando quero fazer duas ações
+        //no exemplo vou visualizar e mandar os dados
+        [HttpGet]//usado qndo quero visualizar e obter o dado
 
         public IActionResult Cadastrar()
         {
             return View();
         }
 
-        //usado quando quero enviar dados
-        [HttpPost]
+        
+        [HttpPost]//usado quando quero enviar dados
         //Bind é usado quando recebemos informações
         public IActionResult Cadastrar([Bind]Cidade cidade)
         {
             objCidadeRep.Cadastrar(cidade);
             return RedirectToAction("Index");
+        }
+
+         [HttpGet]//usado qndo quero visualizar e obter o dado
+
+        public IActionResult Editar(int id)
+        {
+           var dados = objCidadeRep.ListarCidades(id);
+            return View(dados);
+        }
+
+        
+        [HttpPost]//usado quando quero enviar dados
+        //Bind é usado quando recebemos informações
+        public IActionResult Editar([Bind]Cidade cidade)
+        {
+            objCidadeRep.Editar(cidade);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Excluir(int id){
+            var dados=objCidadeRep.Excluir(id);
+            return RedirectToAction("index");
         }
 
     }

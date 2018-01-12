@@ -4,6 +4,7 @@ table{
     width:70%;
     background-color: rgba(244, 243, 245, 0.8);
     border:2px solid rgb(5, 5, 5);
+    
 }
 td{
     padding:5px;
@@ -22,6 +23,8 @@ th{
     
 
 tr:hover{
-    background-color: rgb(243, 243, 64);
+    background-color: rgb(212, 212, 199);
     font-size:5pt;
 }
+
+

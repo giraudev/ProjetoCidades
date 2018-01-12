@@ -1,12 +1,12 @@
 
-    @model IEnumerable<ProjetoCidades.Models.Cidade>
+    @model IEnumerable<ProjetoCidades.Models.Cidade> 
 
 <div>
     <h2>Minhas Cidades</h2>
 
 @*código para fazer o cadastro*@
     <p>
-        <a asp-action="Cadastrar">Cadastrar Nova Cidade</a>
+        <a asp-action="Cadastrar" class="btn btn-info">Cadastrar Nova Cidade</a>
     </p>
 
 @*código para tabela de listas*@
@@ -40,9 +40,9 @@
                 </td>
                 <td>
                     @*teremos um link na pagina, vc clica em editar, e abrirá a outra página*@
-                    <a asp-action="Editar" asp-route-id="@item.Id">Editar</a>
-                    <a asp-action="Detalhes" asp-route-id="@item.Id">Detalhes</a>
-                    <a asp-action="Excluir" asp-route-id="@item.Id">Excluir</a>
+                    <a asp-action="Editar" asp-route-id="@item.Id" class="btn btn-info">Editar</a>
+                    <a asp-action="Detalhes" asp-route-id="@item.Id" class="btn btn-warning">Detalhes</a>
+                    <a asp-action="Excluir" asp-route-id="@item.Id" class="btn btn-danger">Excluir</a>
                 </td>
             </tr>
         }
