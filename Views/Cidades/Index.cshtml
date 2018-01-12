@@ -3,11 +3,56 @@
 
 <div>
     <h2>Minhas Cidades</h2>
-    
-    @{
+
+@*código para fazer o cadastro*@
+    <p>
+        <a asp-action="Cadastrar">Cadastrar Nova Cidade</a>
+    </p>
+
+@*código para tabela de listas*@
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Estado</th>
+                <th>Habitantes</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+@*colocar o foreach dentro do tbody, e listas os itens*@
+ @{
+        foreach(var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Id
+                </td>
+                <td>
+                    @item.Nome
+                </td>
+                <td>
+                    @item.Estado
+                </td>
+                <td>
+                    @item.Habitantes
+                </td>
+                <td>
+                    @*teremos um link na pagina, vc clica em editar, e abrirá a outra página*@
+                    <a asp-action="Editar" asp-route-id="@item.Id">Editar</a>
+                    <a asp-action="Detalhes" asp-route-id="@item.Id">Detalhes</a>
+                    <a asp-action="Excluir" asp-route-id="@item.Id">Excluir</a>
+                </td>
+            </tr>
+        }
+    }
+        </tbody>
+    </table>
+
+    @*código antigo, para a lista, e não para o bdc{
         foreach(var item in Model)
         {<li>@item.Nome</li>}
-    }
-    
+    }*@
 
 </div>

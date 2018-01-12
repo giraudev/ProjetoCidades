@@ -1,20 +1,27 @@
 body{padding-top:50px;padding-bottom:20px}.body-content{padding-left:15px;padding-right:15px}.carousel-caption p{font-size:20px;line-height:1.4}.carousel-inner .item img[src$=".svg"]{width:100%}#qrCode{margin:15px}@media screen and (max-width:767px){.carousel-caption{display:none}}
 
 table{
-    width:80%;
-    background-color: rgba(200,0,0,0.8);
-    border:2px solid rgb(0,100,0);
+    width:70%;
+    background-color: rgba(244, 243, 245, 0.8);
+    border:2px solid rgb(5, 5, 5);
 }
 td{
     padding:5px;
     font-family:arial;
     font-size:10pt;
+    border:2px solid rgb(5, 5, 5);
 }
 th{
     font-family: verdana;
     font-size:15pt;
-    color:white
+    color:rgb(243, 239, 239);
+    text-align: center;
+    background-color: black
 }
+
+    
+
 tr:hover{
-    background-color: darkblue;
+    background-color: rgb(243, 243, 64);
+    font-size:5pt;
 }
